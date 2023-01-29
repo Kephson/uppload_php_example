@@ -1,4 +1,5 @@
 import './style.css';
+import {de_master} from "../i18n/de_master.ts";
 
 import {
   Uppload,
@@ -6,20 +7,22 @@ import {
   Crop,
   Rotate,
   xhrUploader,
-  en
 } from "uppload";
 
 const uploader = new Uppload({
-  lang: en,
+  lang: de_master,
   uploader: xhrUploader({
     endpoint: "https://uppload-php.ddev.site/upload.php",
     fileKeyName: "upload-01"
   }),
   bind: document.querySelector("img.upload-pic"),
-  call: document.querySelector("button.upload-btn")
+  call: document.querySelector("button.upload-btn"),
+  compressionToMime: "image/jpeg",
+  maxWidth: 2000,
+  maxHeight: 2000
 });
 uploader.use([new Local({
-  maxFileSize: 20000000,
+  maxFileSize: 10000000,
   mimeTypes: ["image/png", "image/jpeg"]
 })]);
 // Effects
