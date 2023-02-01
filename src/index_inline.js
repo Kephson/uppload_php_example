@@ -16,7 +16,10 @@ const uploader = new Uppload({
     endpoint: "https://uppload-php.ddev.site/upload.php",
     fileKeyName: "upload-01"
   }),
-  bind: document.querySelector("img.upload-pic"),
+  bind: [
+    document.querySelector("img.upload-pic"),
+    document.querySelector("input.path")
+  ],
   call: document.querySelector("button.upload-btn"),
   inline: true
 });
