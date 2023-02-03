@@ -8,6 +8,10 @@ Using [DDEV local][2] based on [Docker][3] it is set up in five minutes on your 
 
 To start with [DDEV local][2] (if not already done) [please read the documentation on how install][4] it on your OS.
 
+> Be careful using the PHP script in a production environment without knowing what you do!
+>
+> It is not secured as normally needed and you should not use the PHP script as it is in a public website!
+
 ## Build and test project with DDEV local
 
 Run ```ddev start``` to start the project with DDEV local.
