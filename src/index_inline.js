@@ -17,10 +17,13 @@ const uploader = new Uppload({
     fileKeyName: "upload-01"
   }),
   bind: [
-    document.querySelector("img.upload-pic"),
-    document.querySelector("input.path")
+    document.querySelector("img.uppload-pic"),
+    document.querySelector("input.uppload-path")
   ],
-  call: document.querySelector("button.upload-btn"),
+  call: [
+    document.querySelector("button.uppload-btn"),
+    document.querySelector("img.uppload-pic")
+  ],
   inline: true
 });
 uploader.use([new Local({

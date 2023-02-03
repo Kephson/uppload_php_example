@@ -1,16 +1,16 @@
 import './style.css';
+import {de_master} from "../i18n/de_master.ts";
 
 import {
   Uppload,
   Local,
   Crop,
   Rotate,
-  en,
   xhrUploader,
 } from "uppload";
 
 const uploader = new Uppload({
-  lang: en,
+  lang: de_master,
   uploader: xhrUploader({
     endpoint: "https://uppload-php.ddev.site/upload.php",
     fileKeyName: "upload-01"
