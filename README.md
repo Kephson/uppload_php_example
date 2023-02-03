@@ -32,11 +32,20 @@ Run ```ddev npm run dev``` to build the files to use in a development mode.
 ### Run project
 Run project while browsing to [uppload-php.ddev.site][6] on your local machine.
 
-There are different demo versions:
+### PHP files
+The file ```upload.php``` is doing the file upload with easiest PHP functions.
+
+The file ```cron.php``` could be used to delete all files in upload folder after x minutes.
+
+## Demo
+There are different demo versions in the project:
 - [Image upload example with crop, resize and rotate function][7] (language: EN)
 - [Image upload example with crop, resize and rotate function][8] (language: DE)
 - [Image upload example with all editor functions][9] (language: EN)
 - [Image upload example as inline object with crop and rotate function][10] (language: EN)
+
+Public demo:
+- [Public available demo][11]
 
 
 [1]: https://uppload.js.org/
@@ -49,3 +58,4 @@ There are different demo versions:
 [8]: https://uppload-php.ddev.site/index_de.html
 [9]: https://uppload-php.ddev.site/index_full.html
 [10]: https://uppload-php.ddev.site/index_inline.html
+[11]: https://uppload-php.hrr.digital/

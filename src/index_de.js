@@ -12,7 +12,7 @@ import {
 const uploader = new Uppload({
   lang: de_master,
   uploader: xhrUploader({
-    endpoint: "https://uppload-php.ddev.site/upload.php",
+    endpoint: "/upload.php",
     fileKeyName: "upload-01"
   }),
   bind: [

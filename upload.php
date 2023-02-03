@@ -4,11 +4,7 @@ $storeFolder = 'uploads';
 if (!is_dir($storeFolder)) {
     mkdir($storeFolder);
 }
-/*
-print '<pre>';
-print_r($_FILES);
-print '</pre>';
-*/
+
 $data = [
     'url' => '',
     'status' => 'error',
